@@ -100,14 +100,13 @@ const ColorList = ({ colors, updateColors }) => {
           </div>
         </form>
       )}
-      <div className="spacer" />
 
       {/* stretch - build another form here to add a color */}
 
       <form onSubmit={saveColor}>
-          <legend>New color</legend>
+          <legend>new color</legend>
           <label>
-            New color name:
+            color name:
             <input
               onChange={e =>
                 setColorToSave({ ...colorToSave, color: e.target.value })
@@ -131,6 +130,8 @@ const ColorList = ({ colors, updateColors }) => {
             <button type="submit">save</button>
           </div>
         </form>
+
+        <div className="spacer" />
     </div>
   );
 };
