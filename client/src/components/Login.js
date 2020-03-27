@@ -25,7 +25,7 @@ const Login = () => {
       console.log(res.data.payload)
       localStorage.setItem('token', JSON.stringify(res.data.payload));
 
-      history.push('/protected');
+      history.push('/bubbles');
     })
   }  
 
